@@ -109,7 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
+Insurance-Premium-Prediction-Internship-Project\insurance_logs
 # Spyder project settings
 .spyderproject
 .spyproject
