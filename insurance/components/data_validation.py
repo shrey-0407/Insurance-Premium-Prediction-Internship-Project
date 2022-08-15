@@ -17,6 +17,7 @@ class DataValidation:
     def __init__(self, data_validation_config:DataValidationConfig,
         data_ingestion_artifact:DataIngestionArtifact):
         try:
+            logging.info(f"{'='*20}Data Valdaition log started.{'='*20} \n\n")
             self.data_validation_config = data_validation_config
             self.data_ingestion_artifact = data_ingestion_artifact
         except Exception as e:
@@ -63,15 +64,6 @@ class DataValidation:
         try:
             validation_status = False
 
-            #Assigment validate training and testing dataset using schema file
-            #1. Number of Column
-            #2. Check the value of ocean proximity 
-            # acceptable values     <1H OCEAN
-            # INLAND
-            # ISLAND
-            # NEAR BAY
-            # NEAR OCEAN
-            #3. Check column names
 
 
             validation_status = True
@@ -137,9 +129,13 @@ class DataValidation:
                 message="Data Validation performed successully."
             )
             logging.info(f"Data validation artifact: {data_validation_artifact}")
-
+            return data_validation_artifact
 
 
 
         except Exception as e:
             raise insuranceException(e,sys) from e
+
+
+    def __del__(self):
+         logging.info(f"{'='*20}Data Valdaition log completed.{'='*20} \n\n")

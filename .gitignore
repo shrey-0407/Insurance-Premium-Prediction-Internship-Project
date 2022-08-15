@@ -103,6 +103,7 @@ celerybeat.pid
 insurance/artifact
 insurance_predictor.egg-info
 # Environments
+.idea/*
 .env
 .venv
 env/
