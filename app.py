@@ -15,3 +15,6 @@ def index():
         logging.info(insurance.error_message)
         logging.info("We are testing logging module")
     return "CI CD pipeline has been established."
+
+if __name__=="__main__":    
+    app.run()

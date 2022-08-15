@@ -100,7 +100,8 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
+insurance/artifact
+insurance_predictor.egg-info
 # Environments
 .env
 .venv

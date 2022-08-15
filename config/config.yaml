@@ -1,5 +1,5 @@
 training_pipeline_config:
-  pipeline_name: housing
+  pipeline_name: insurance
   artifact_dir: artifact
 
 data_ingestion_config:
