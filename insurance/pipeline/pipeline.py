@@ -2,9 +2,10 @@ from insurance.config.configuration import Configuartion
 from insurance.logger import logging
 from insurance.exception import insuranceException
 
-from insurance.entity.artifact_entity import DataIngestionArtifact
+from insurance.entity.artifact_entity import DataIngestionArtifact, DataValidationArtifact
 from insurance.entity.config_entity import DataIngestionConfig
 from insurance.components.data_ingestion import DataIngestion
+from insurance.components.data_validation import DataValidation
 import os,sys
 
 class Pipeline:
@@ -24,8 +25,15 @@ class Pipeline:
             raise insuranceException(e,sys) from e    
 
 
-    def start_data_validation(self):
-        pass
+    def start_data_validation(self,data_ingestion_artifact:DataIngestionArtifact) \
+        -> DataValidationArtifact :
+        try:
+            data_validation =  DataValidation(data_validation_config=self.config.get_data_validation_config(),
+                                              data_ingestion_artifact=data_ingestion_artifact
+            )
+            return data_validation.initiate_data_validation()
+        except Exception as e:
+            raise HousingException(e,sys) from e
 
     def start_data_transformation(self):
         pass
@@ -44,6 +52,7 @@ class Pipeline:
             #data ingestion
 
             data_ingestion_artifact = self.start_data_ingestion()
+            data_validation_artifact = self.start_data_validation(data_ingestion_artifact=data_ingestion_artifact)
 
 
 
