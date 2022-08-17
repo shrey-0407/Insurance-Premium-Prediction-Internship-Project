@@ -121,7 +121,7 @@ Insurance-Premium-Prediction-Internship-Project\insurance_logs
 
 # mkdocs documentation
 /site
-
+logs/
 # mypy
 .mypy_cache/
 .dmypy.json

@@ -4,7 +4,7 @@ from typing import List
 #Declaring variables for setup functions
 PROJECT_NAME="insurance-predictor"
 VERSION="0.0.3"
-AUTHOR="Internship Project"
+AUTHOR="Nitish , Shreyash , Pruthvi , Aniruddha"
 DESRCIPTION="This is a first INtership FSDS Nov batch Machine Learning Project"
 
 REQUIREMENT_FILE_NAME="requirements.txt"
