@@ -1,6 +1,8 @@
 Application URL : [InsurancePremiumPredictor](https://ml-regressor-insurance.herokuapp.com/)
 
+
 <h1 align="center"> Insurance Premium Prediction Internship Project </h1>
+
 
 ## Table of contents
 * [About project](#about-project)
@@ -14,7 +16,7 @@ Application URL : [InsurancePremiumPredictor](https://ml-regressor-insurance.her
 This app predicts Insurance premium price based on some data.
 
 
-## Technologies
+## Technologies 💙
 This project is created with below technologies/tools/resorces:
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"> 
