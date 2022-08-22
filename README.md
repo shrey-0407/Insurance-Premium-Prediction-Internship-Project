@@ -13,8 +13,7 @@ The goal of this project to give people an estimate of how much they need based 
 * [Project Pipeline](#project-pipeline)
 <!-- * [License](#license) -->
 
-## About project
-This app predicts Insurance premium price based on some data.
+
 
 
 ## Technologies 💙
