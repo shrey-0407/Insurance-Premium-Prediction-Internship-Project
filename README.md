@@ -1,5 +1,7 @@
 Application URL : [InsurancePremiumPredictor](https://ml-regressor-insurance.herokuapp.com/)
 
+<h1 align="center"> Insurance Premium Prediction Internship Project </h1>
+
 ## Table of contents
 * [About project](#about-project)
 * [Technologies](#technologies)
