@@ -16,6 +16,7 @@ from flask import send_file, abort, render_template
 
 
 ROOT_DIR = os.getcwd()
+# log dir issue fiexed
 LOG_FOLDER_NAME = "logs"
 PIPELINE_FOLDER_NAME = "insurance"
 SAVED_MODELS_DIR_NAME = "saved_models"
