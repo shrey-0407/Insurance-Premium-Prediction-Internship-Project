@@ -35,7 +35,7 @@ This project is created with below technologies/tools/resources:
 * Docker
 * Git
 * CI/CD Pipeline
-* Heroku
+* Heroku/AWS
 
 
 ## Software and account Requirement :-
